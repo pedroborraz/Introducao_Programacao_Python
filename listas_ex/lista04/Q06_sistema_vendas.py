@@ -12,7 +12,8 @@ Codigo | Preco
 """
 
 print(tabela_preco)
-codigo_produto = int(input("Digite o codigo do produto (de 1-5 e 0 para sair): "))
+msg_codigo = "Digite o codigo do produto (de 1-5 e 0 para sair): "
+codigo_produto = int(input(msg_codigo))
 
 while (codigo_produto != 0):
     quantidade = int(input("Digite a quantidade desejada: "))
@@ -29,9 +30,9 @@ while (codigo_produto != 0):
         preço = 9.30
     else:
         print("Codigo invalido. Tente novamente.")
-        codigo_produto = int(input("Digite o codigo do produto (de 1-5 e 0 para sair): "))
+        codigo_produto = int(input(msg_codigo))
         continue
     
     total = preço * quantidade
     print(f"O total da compra e: R$ {total:.2f}")
-    codigo_produto = int(input("Digite o codigo do produto (de 1-5 e 0 para sair): "))
+    codigo_produto = int(input(msg_codigo))
